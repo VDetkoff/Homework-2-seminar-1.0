@@ -1,26 +1,40 @@
-﻿/*
-int FindBiggerDigit(int number)
+﻿
+/*
+// Домашняя работа 1 Напишите программу, которая принимает на вход трёхзначное число и на выходе показывает вторую цифру этого числа.
+
+
+int SpecifySecondDigit(int num)
 {
-    int ed = number % 10;
-    int dec = number /10;
+    int num1,  res;
 
-    int result;
-    if(ed > dec) result = ed;
-    else result = dec;
-
-    return result; 
+    num1 = (num % 100)/10;
+    res = num1;
+    return  res;
 }
 
-int randNumber = new Random().Next(10, 1000);
-int biggerDigit = FindBiggerDigit(randNumber);
+Console.Write("Enter a three-digit number: ");
+int num = Convert.ToInt32(Console.ReadLine());
+int specifySecond = SpecifySecondDigit(num);
+Console.WriteLine($"The second digit of a three-digit number: {specifySecond}");
 
-Console.WriteLine($"Bigger digit of {randNumber} is {biggerDigit}");
 */
+//Домашняя работа 3 Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
 
-static void Main(string[] args)
+void WorkingDay(int num)
 {
-    int n = 534534623;
-    int d = GetSecondDigit(n);
-    Console.WriteLine(d);
-    Console.ReadKey();
+   
+    if(num < 6 & num < 7) 
+    {
+        Console.WriteLine("Working day");
+    }
+    else 
+    {
+        Console.WriteLine("Weekend");
+    }
+   
 }
+
+    Console.Write("Day of the week: ");
+    int num = Convert.ToInt32(Console.ReadLine());
+    WorkingDay(num);
+    
