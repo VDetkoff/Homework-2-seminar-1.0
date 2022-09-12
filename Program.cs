@@ -19,7 +19,7 @@ Console.WriteLine($"The second digit of a three-digit number: {specifySecond}");
 
 */
 //Домашняя работа 3 Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
-
+/*
 void WorkingDay(int num)
 {
    
@@ -37,4 +37,4 @@ void WorkingDay(int num)
     Console.Write("Day of the week: ");
     int num = Convert.ToInt32(Console.ReadLine());
     WorkingDay(num);
-    
+    */
